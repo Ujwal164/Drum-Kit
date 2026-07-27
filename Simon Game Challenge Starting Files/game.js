@@ -5,9 +5,10 @@ var userClickedPattern= [];
 var started = false;
 var level = 0;
 
-
 $(document).keypress(function(){
+   
     if(!started){
+        $(".instruction").hide();
         $("#level-title").text("Level "+level);
         gameSequence();
         started = true;
